@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    <style>
+        body {
+            font-family: Inter;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #004d99;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #004d99;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        .row:hover {
+            background-color: #f2f8ff;
+        }
+        .row:last-child {
+            border-bottom: none;
+        }
+        .row span {
+            flex: 1;
+            padding: 10px;
+        }
+        .row .label {
+            font-weight: bold;
+            color: #333;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+        }
+        .row .content {
+            text-align: left;
+        }
+        @media (max-width: 600px) {
+            .row {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .row .label, .row .content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>University Visvesvaraya College of Engineering (UVCE), Bengaluru</h1>
+
+        <div class="section">
+            <div class="section-title">Infrastructure Overview</div>
+
+            <div class="row">
+                <span class="label">Main Block</span>
+                <span class="content">Houses administrative offices, library, and lecture halls.</span>
+            </div>
+            <div class="row">
+                <span class="label">Computer Science Block</span>
+                <span class="content">Equipped with modern labs, classrooms, and faculty offices.</span>
+            </div>
+            <div class="row">
+                <span class="label">Mechanical Block</span>
+                <span class="content">Includes workshops, labs, and lecture rooms for mechanical engineering students.</span>
+            </div>
+            <div class="row">
+                <span class="label">Electrical Block</span>
+                <span class="content">Contains electrical labs, classrooms, and faculty offices.</span>
+            </div>
+            <div class="row">
+                <span class="label">Hostel Facilities</span>
+                <span class="content">Separate hostels for boys and girls with mess and recreational facilities.</span>
+            </div>
+            <div class="row">
+                <span class="label">Sports Complex</span>
+                <span class="content">Includes a gymnasium, basketball courts, and a cricket field.</span>
+            </div>
+            <div class="row">
+                <span class="label">Auditorium</span>
+                <span class="content">Large auditorium used for events, seminars, and conferences.</span>
+            </div>
+            <div class="row">
+                <span class="label">Library</span>
+                <span class="content">A vast collection of books, journals, and digital resources.</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Additional Facilities</div>
+
+            <div class="row">
+                <span class="label">Wi-Fi Campus</span>
+                <span class="content">High-speed internet access available throughout the campus.</span>
+            </div>
+            <div class="row">
+                <span class="label">Canteen</span>
+                <span class="content">Serves a variety of meals and snacks at affordable prices.</span>
+            </div>
+            <div class="row">
+                <span class="label">Parking</span>
+                <span class="content">Ample parking space for students, faculty, and visitors.</span>
+            </div>
+            <div class="row">
+                <span class="label">Medical Center</span>
+                <span class="content">Provides basic medical facilities and first aid services.</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

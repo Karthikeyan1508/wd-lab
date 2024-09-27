@@ -1,0 +1,150 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>4</title>
+        <style>
+           * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            font-family: Inter;
+            display: flex;
+            background-color: #cbf6e8;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .left, .center, .right {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .left {
+            background-color: #312526;
+            color: #ecf0f1;
+            width: 20%;
+        }
+        .center {
+            background-color: #31252634; /* Changed background color */
+            color: #312526;
+            width: 60%;
+            overflow-y: auto;
+            line-height: 1.8; /* Adjusted line height for better readability */
+            padding-right: 30px; /* Added padding for content */
+        }
+        .right {
+            background-color: #312526;
+            color: #ecf0f1;
+            width: 20%;
+        }
+        h2, h3 {
+            margin-bottom: 15px;
+        }
+        p, ul, li {
+            line-height: 1.5; /* Adjusted line height in paragraphs and list items */
+        }
+        .center ul{
+            padding-left: 20px;
+            padding-top: 5px;
+            list-style-type: disc;
+        }
+        .center ul li{
+            line-height: 1;
+        }
+        ul {
+            list-style-type: none;
+            /* padding-left: 10px; */
+        }
+        ul li {
+            padding: 8px;
+            /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+            /* cursor: pointer; */
+            transition: background-color 0.3s ease;
+        }
+        ul li:hover {
+            /* background-color: rgba(255, 255, 255, 0.2); */
+        }
+        .content-title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .remarks {
+            font-style: italic;
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .center, .right {
+                width: 100%;
+                padding: 15px;
+            }
+        }   
+    </style>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <!-- Left Frame -->
+            <div class="left">
+                <h3>Contents</h3>
+                <ul>
+                    <li><a href="#intro" style="color: inherit; text-decoration: none;">Introduction to India</a></li>
+                    <li><a href="#culture" style="color: inherit; text-decoration: none;">Culture</a></li>
+                    <li><a href="#landmarks" style="color: inherit; text-decoration: none;">Famous Landmarks</a></li>
+                    <li><a href="#history" style="color: inherit; text-decoration: none;">History</a></li>
+                </ul>
+            </div>
+
+            <!-- Center Frame -->
+            <div class="center">
+                <div class="content-title">Discover India</div>
+                
+                <h2 id="intro">Introduction to India</h2>
+                <p>India, officially the Republic of India, is a country in South Asia. It is the seventh-largest country by land area, the most populous country, and the most populous democracy in the world. India's diverse geography ranges from the Himalayan peaks in the north to the Indian Ocean coastline in the south.</p>
+<Br>
+                <h2 id="culture">Culture</h2>
+                <p>India is known for its rich and diverse culture, which has been influenced by various religions, languages, and traditions over millennia. Festivals like Diwali, Holi, and Eid are celebrated with great enthusiasm across the country. Indian cuisine, with its wide variety of flavors and spices, is famous globally.</p>
+<br>
+                <h2 id="landmarks">Famous Landmarks</h2>
+                <p>India is home to several iconic landmarks such as:</p>
+                <ul>
+                    <li>The Taj Mahal in Agra - a symbol of love and one of the Seven Wonders of the World.</li>
+                    <li>The Qutub Minar in Delhi - a towering example of Islamic architecture.</li>
+                    <li>The Gateway of India in Mumbai - a colonial-era monument that overlooks the Arabian Sea.</li>
+                    <li>The Red Fort in Delhi - a historic fort that served as the main residence of Mughal emperors.</li>
+                </ul>
+<br>
+                <h2 id="history">History</h2>
+                <p>India has a rich history that spans over 5,000 years. It is the birthplace of major religions such as Hinduism, Buddhism, Jainism, and Sikhism. India's colonial period under British rule ended in 1947, when the country gained its independence through non-violent movements led by Mahatma Gandhi and others.</p>
+            </div>
+
+            <!-- Right Frame -->
+            <div class="right">
+                <h3>Remarks</h3>
+                <p class="remarks">India's history, culture, and landmarks reflect the nation's vast diversity and unity. It continues to be a global hub of culture, innovation, and spirituality.</p>
+                <p class="remarks">Note: The information provided gives a brief overview and is not exhaustive.</p>
+            </div>
+
+        </div>
+
+    </body>
+    </html>
